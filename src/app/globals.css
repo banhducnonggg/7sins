@@ -1,26 +1,37 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --darkbg: oklch(0.3052 0 0);
+  --darkfg: oklch(0.9851 0 0);
+  --lightbg: oklch(0.4128 0 0);
+  --lightfg: oklch(0.7794 0 0);
+  --pride: oklch(0.3354 0.1363 353.56);
+  --envy: oklch(0.7981 0.2344 138.58);
+  --wrath: oklch(0.3976 0.1574 28.47);
+  --sloth: oklch(0.7896 0.0182 153.48);
+  --greed: oklch(0.7005 0.1387 92.44);
+  --gluttony: oklch(0.38 0.1523 18.62);
+  --lust: oklch(0.5931 0.2726 328.36);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-pride: var(--pride);
+  --color-envy: var(--envy);
+  --color-wrath: var(--wrath);
+  --color-sloth: var(--sloth);
+  --color-greed: var(--greed);
+  --color-gluttony: var(--gluttony);
+  --color-lust: var(--lust);
+  --color-background: var(--darkbg);
+  --color-foreground: var(--darkfg);
+  --color-background-secondary: var(--lightbg);
+  --color-foreground-secondary: var(--lightfg);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--color-background);
+  color: var(--color-foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
