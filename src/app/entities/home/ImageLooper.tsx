@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 type Props = {
   images: string[];
@@ -22,6 +23,32 @@ const ImageLooper = ({
   const [index, setIndex] = useState(0);
   const [maskIndex, setMaskIndex] = useState(0);
 
+  const [initialX, setInitialX] = useState("0vw");
+  const [animateX, setAnimateX] = useState("100vw");
+
+  useEffect(() => {
+    const handleResize = () => {
+      const w = window.innerWidth;
+      if (w < 768) {
+        setInitialX("-50vw"); // mobile
+        setAnimateX("50vw"); // mobile
+      } else if (w < 1024) {
+        setInitialX("-25vw"); // tablet
+        setAnimateX("75vw"); // tablet
+      } else if (w < 1440) {
+        setInitialX("0vw"); // desktop
+        setAnimateX("100vw"); // desktop
+      } else {
+        setInitialX("0vw"); // xl and up
+        setAnimateX("100vw"); // xl and up
+      }
+    };
+
+    handleResize(); // set on load
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   useEffect(() => {
     const loop = setInterval(() => {
       setIndex((prev) => (prev + 1) % images.length);
@@ -37,12 +64,19 @@ const ImageLooper = ({
   }, [images.length, masks.length, interval, maskInterval]);
 
   return (
-    <div className="relative w-fit h-full">
+    <div className="relative w-full">
       {images.map((src, i) =>
         masks.map((mask, j) => (
-          <div
+          <motion.div
             key={`img-${i}-mask-${j}`}
-            className={`absolute top-0 left-1/2 -translate-x-1/2 h-[100vh] w-auto bg-cover bg-center pointer-events-none ${
+            initial={{ x: initialX }}
+            animate={{ x: animateX }}
+            transition={{
+              duration: 11,
+              ease: "linear",
+              repeat: Infinity,
+            }}
+            className={`absolute top-0 -left-1/2 h-[80vh] w-auto bg-cover bg-center pointer-events-none ${
               i === index && j === maskIndex
                 ? "opacity-100 z-10"
                 : "opacity-0 z-0"
