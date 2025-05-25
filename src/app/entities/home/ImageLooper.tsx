@@ -14,8 +14,8 @@ type Props = {
 const ImageLooper = ({
   images,
   masks,
-  interval = 500,
-  maskInterval = 300,
+  interval = 240,
+  maskInterval = 400,
   width = 400,
   height = 400,
 }: Props) => {
@@ -37,12 +37,12 @@ const ImageLooper = ({
   }, [images.length, masks.length, interval, maskInterval]);
 
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-fit h-full">
       {images.map((src, i) =>
         masks.map((mask, j) => (
           <div
             key={`img-${i}-mask-${j}`}
-            className={`absolute top-1/2 left-1/2 -translate-x-1/2 h-[100vh] w-auto bg-cover bg-center pointer-events-none ${
+            className={`absolute top-0 left-1/2 -translate-x-1/2 h-[100vh] w-auto bg-cover bg-center pointer-events-none ${
               i === index && j === maskIndex
                 ? "opacity-100 z-10"
                 : "opacity-0 z-0"
@@ -55,8 +55,10 @@ const ImageLooper = ({
               // WebkitMaskBoxImage: `url(/home/series/3.png)`,
               WebkitMaskBoxImage: `url(${src})`,
               WebkitMaskBoxImageRepeat: "no-repeat",
-              WebkitMaskBoxImageSlice: "cover",
+              WebkitMaskBoxImageSlice: "contain",
               WebkitMaskPosition: "center",
+              WebkitMaskBoxImageWidth: "auto",
+              // backgroundImage: `url(${src})
               // maskImage: `url(${mask})`,
               // maskRepeat: "no-repeat",
               // maskSize: "cover",
