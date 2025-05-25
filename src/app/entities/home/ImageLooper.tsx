@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 type Props = {
@@ -39,32 +38,45 @@ const ImageLooper = ({
 
   return (
     <div className="relative w-full h-full">
-      {images.map((src, i) => (
-        <Image
-          key={i}
-          src={src}
-          alt={`image-${i}`}
-          width={width}
-          height={height}
-          className={`absolute top-1/2 left-1/2 -translate-x-1/2 object-cover transition-opacity duration-250 ${
-            i === index ? "opacity-100 z-10" : "opacity-0 z-0"
-          }`}
-          priority={i === 0} // preload the first image
-        />
-      ))}
-      {/* Mask layer */}
-      {masks.map((mask, i) => (
-        <Image
-          key={`mask-${i}`}
-          src={mask}
-          alt={`mask-${i}`}
-          width={width}
-          height={height}
-          className={`absolute top-1/2 left-1/2 -translate-x-1/2 object-cover transition-opacity duration-150 pointer-events-none mix-blend-multiply ${
-            i === maskIndex ? "opacity-100 z-20" : "opacity-0 z-0"
-          }`}
-        />
-      ))}
+      {images.map((src, i) =>
+        masks.map((mask, j) => (
+          <div
+            key={`img-${i}-mask-${j}`}
+            className={`absolute top-1/2 left-1/2 -translate-x-1/2 h-[100vh] w-auto bg-cover bg-center pointer-events-none ${
+              i === index && j === maskIndex
+                ? "opacity-100 z-10"
+                : "opacity-0 z-0"
+            }`}
+            style={{
+              width,
+              height,
+              // backgroundImage: `url(/home/holders/loop-1.png)`,
+              backgroundImage: `url(${mask})`,
+              // WebkitMaskBoxImage: `url(/home/series/3.png)`,
+              WebkitMaskBoxImage: `url(${src})`,
+              WebkitMaskBoxImageRepeat: "no-repeat",
+              WebkitMaskBoxImageSlice: "cover",
+              WebkitMaskPosition: "center",
+              // maskImage: `url(${mask})`,
+              // maskRepeat: "no-repeat",
+              // maskSize: "cover",
+              // maskPosition: "center",
+            }}
+          />
+        ))
+      )}
+      {/* <div
+        style={{
+          width: "400px",
+          height: "400px",
+          backgroundColor: "red",
+          WebkitMaskBoxImage: "url('/home/holders/loop-1.png')",
+          backgroundImage: "url('/home/series/1.png')",
+          WebkitMaskSize: "cover",
+          WebkitMaskRepeat: "no-repeat",
+          WebkitMaskPosition: "center",
+        }}
+      ></div> */}
     </div>
   );
 };
