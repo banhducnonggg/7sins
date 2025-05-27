@@ -1,4 +1,7 @@
+import { TiltMotion } from "@/components/ui/tilt-motion";
 import ImageLooper from "./ImageLooper";
+import GlitchText from "@/components/ui/glitch-text";
+import Highlighter from "@/components/ui/highlighter";
 
 // const images = ["/home/holders/loop-1.png", "/home/holders/loop-2.png", "/home/holders/loop-3.png"];
 const images = [
@@ -48,8 +51,20 @@ const masks = [
 
 export default function Hero() {
   return (
-    <div className="flex items-center justify-center w-full h-auto rounded-md lg:rounded-lg xl:rounded-xl bg-background/50">
-      <ImageLooper images={images} masks={masks} height={800} width={800} />
+    <div className="flex flex-col items-center justify-around w-full gap-16 pb-16 rounded-md h-fit lg:rounded-lg xl:rounded-xl">
+      {/* <h1 className="w-full m-8">Fear of being OrDiNarY</h1> */}
+      <h1 className="italic text-8xl">1 on 1/One on One</h1>
+      <TiltMotion tiltFactor={16} scale={1.05} perspective={1600} transitionDuration={0.4}>
+        <div className="bg-[url('/home/series/9.png')] bg-cover bg-center bg-no-repeat w-full h-full flex items-end justify-center p-8">
+        <h1 className="">
+          <GlitchText
+            text="Fear of being ordinary"
+            fontWeight="500"
+            className="text-4xl text-sloth"
+          />
+        </h1></div>
+      </TiltMotion>
+      {/* <ImageLooper images={images} masks={masks} height={800} width={800} /> */}
     </div>
   );
 }

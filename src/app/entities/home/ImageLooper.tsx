@@ -15,7 +15,7 @@ type Props = {
 const ImageLooper = ({
   images,
   masks,
-  interval = 240,
+  interval = 400,
   maskInterval = 400,
   width = 400,
   height = 400,
@@ -76,7 +76,7 @@ const ImageLooper = ({
               ease: "linear",
               repeat: Infinity,
             }}
-            className={`absolute top-0 -left-1/2 h-[80vh] w-auto bg-cover bg-center pointer-events-none ${
+            className={`absolute top-0 -left-1/2 h-[100vh] w-auto bg-cover bg-center pointer-events-none ${
               i === index && j === maskIndex
                 ? "opacity-100 z-10"
                 : "opacity-0 z-0"
@@ -84,35 +84,16 @@ const ImageLooper = ({
             style={{
               width,
               height,
-              // backgroundImage: `url(/home/holders/loop-1.png)`,
               backgroundImage: `url(${mask})`,
-              // WebkitMaskBoxImage: `url(/home/series/3.png)`,
               WebkitMaskBoxImage: `url(${src})`,
               WebkitMaskBoxImageRepeat: "no-repeat",
               WebkitMaskBoxImageSlice: "contain",
               WebkitMaskPosition: "center",
               WebkitMaskBoxImageWidth: "auto",
-              // backgroundImage: `url(${src})
-              // maskImage: `url(${mask})`,
-              // maskRepeat: "no-repeat",
-              // maskSize: "cover",
-              // maskPosition: "center",
             }}
           />
         ))
       )}
-      {/* <div
-        style={{
-          width: "400px",
-          height: "400px",
-          backgroundColor: "red",
-          WebkitMaskBoxImage: "url('/home/holders/loop-1.png')",
-          backgroundImage: "url('/home/series/1.png')",
-          WebkitMaskSize: "cover",
-          WebkitMaskRepeat: "no-repeat",
-          WebkitMaskPosition: "center",
-        }}
-      ></div> */}
     </div>
   );
 };
