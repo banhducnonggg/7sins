@@ -14,9 +14,9 @@ interface TiltMotionProps {
 
 export const TiltMotion: React.FC<TiltMotionProps> = ({
   children,
-  tiltFactor = 15,
+  tiltFactor = 29,
   perspective = 1000,
-  scale = 1.05,
+  scale = 1.02,
   transitionDuration = 0.5,
 }) => {
   const [isHovering, setIsHovering] = useState(false)
@@ -69,7 +69,7 @@ export const TiltMotion: React.FC<TiltMotionProps> = ({
   return (
     <motion.div
       ref={ref}
-      className="flex w-5/6 h-[64dvh]"
+      className="flex w-full h-screen"
       style={{
         perspective,
         transformStyle: "preserve-3d",
@@ -83,7 +83,7 @@ export const TiltMotion: React.FC<TiltMotionProps> = ({
         style={{
           rotateX,
           rotateY,
-          scale: isHovering ? scale : 1,
+          // scale: isHovering ? scale : 1,
           z: isHovering ? 50 : 0,
         }}
         transition={{

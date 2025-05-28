@@ -51,18 +51,28 @@ const masks = [
 
 export default function Hero() {
   return (
-    <div className="flex flex-col items-center justify-around w-full gap-16 pb-16 rounded-md h-fit lg:rounded-lg xl:rounded-xl">
+    <div className="flex flex-col items-center justify-around w-full gap-8 pb-16 rounded-md h-fit lg:rounded-lg xl:rounded-xl">
       {/* <h1 className="w-full m-8">Fear of being OrDiNarY</h1> */}
-      <h1 className="italic text-8xl">1 on 1/One on One</h1>
-      <TiltMotion tiltFactor={16} scale={1.05} perspective={1600} transitionDuration={0.4}>
-        <div className="bg-[url('/home/series/9.png')] bg-cover bg-center bg-no-repeat w-full h-full flex items-end justify-center p-8">
-        <h1 className="">
-          <GlitchText
-            text="Fear of being ordinary"
-            fontWeight="500"
-            className="text-4xl text-sloth"
-          />
-        </h1></div>
+
+      <TiltMotion
+        tiltFactor={8}
+        scale={1}
+        perspective={4000}
+        transitionDuration={0.4}
+      >
+        <div className="bg-[url('/home/series/9.png')] bg-cover bg-center bg-no-repeat w-full h-full flex flex-col items-center justify-end p-8 pb-16">
+          <h1 className="italic text-8xl text-[#CC00CC]">
+            1 on 1/One on One
+            <span className="text-xs">lust</span>
+          </h1>
+          <h1>
+            <GlitchText
+              text="Fear of being ordinary"
+              fontWeight="500"
+              className="text-5xl shadow-xl text-foreground shadow-wrath"
+            />
+          </h1>
+        </div>
       </TiltMotion>
       {/* <ImageLooper images={images} masks={masks} height={800} width={800} /> */}
     </div>

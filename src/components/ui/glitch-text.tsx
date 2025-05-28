@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState } from "react";
 
 interface GlitchTextProps {
-  text: string
-  textSize?: string
-  className?: string
-  fontWeight?: React.CSSProperties["fontWeight"]
+  text: string;
+  textSize?: string;
+  className?: string;
+  fontWeight?: React.CSSProperties["fontWeight"];
 }
 
 export default function GlitchText({
@@ -15,21 +15,21 @@ export default function GlitchText({
   className = "",
   fontWeight = "normal",
 }: GlitchTextProps) {
-  const [displayedText, setDisplayedText] = useState("")
+  const [displayedText, setDisplayedText] = useState("");
 
   useEffect(() => {
-    let currentIndex = 0
-    const fullText = text
+    let currentIndex = 0;
+    const fullText = text;
     const typingInterval = setInterval(() => {
       if (currentIndex <= fullText.length) {
-        setDisplayedText(fullText.slice(0, currentIndex))
-        currentIndex++
+        setDisplayedText(fullText.slice(0, currentIndex));
+        currentIndex++;
       } else {
-        clearInterval(typingInterval)
+        clearInterval(typingInterval);
       }
-    }, 100)
-    return () => clearInterval(typingInterval)
-  }, [text])
+    }, 100);
+    return () => clearInterval(typingInterval);
+  }, [text]);
 
   return (
     <div
@@ -47,12 +47,14 @@ export default function GlitchText({
           align-items: center;
           justify-content: center;
           text-align: center;
-          background-color: transparent;
+          backdrop-filter: blur(8px);
         }
         .glitch {
           position: relative;
-          letter-spacing: 3px;
+          letter-spacing: 8px;
           z-index: 1;
+          text-shadow: 0 0 2px rgba(255, 255, 255, 0.2),
+            0 0 4px rgba(255, 255, 255, 0.2);
         }
         .glitch:before,
         .glitch:after {
@@ -64,38 +66,38 @@ export default function GlitchText({
           opacity: 0.8;
         }
         .glitch:before {
-          animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
+          animation: glitch-it 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
             infinite;
-          color: #00ffff;
+          color: #d1ffd2;
           z-index: -1;
         }
         .glitch:after {
-          animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse
+          animation: glitch-it 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse
             both infinite;
-          color: #ff00ff;
+          color: #d2c8ff;
           z-index: -2;
         }
         @keyframes glitch-it {
           0% {
-            transform: translate(0);
+            transform: translateX(0);
           }
           20% {
-            transform: translate(-2px, 2px);
+            transform: translateX(-3px);
           }
           40% {
-            transform: translate(-2px, -2px);
+            transform: translateX(-3px);
           }
           60% {
-            transform: translate(2px, 2px);
+            transform: translateX(3px);
           }
           80% {
-            transform: translate(2px, -2px);
+            transform: translateX(3px);
           }
-          to {
-            transform: translate(0);
+          100% {
+            transform: translateX(0);
           }
         }
       `}</style>
     </div>
-  )
+  );
 }

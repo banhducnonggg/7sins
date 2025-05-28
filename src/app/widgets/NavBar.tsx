@@ -21,15 +21,16 @@ export default function NavBar() {
     //     <BriefcaseBusinessIcon className="text-background" />
     //   </DockIcon>
     // </Dock>
-    <div className="fixed flex flex-row items-center justify-between h-32 py-4 top-4 left-8 right-8 md:left-16 md:right-16 lg:left-24 lg:right-24 xl:left-32 xl:right-32 z-99">
+    <div className="fixed top-0 left-0 flex flex-row items-center justify-between w-[99%] h-32 py-4 pl-8 pr-8 md:pl-16 md:pr-16 lg:pl-24 lg:pr-24 xl:pl-32 xl:pr-32 z-99">
+      <div className="flex items-center justify-center px-8 py-4 transition-transform duration-300 ease-in-out rounded-full shadow-md bg-background-secondary shadow-sloth hover:shadow-xl hover:scale-124">
       <Image
         src={"/envy-horizontal.webp"}
         width={240}
         height={240}
         priority
         alt="Profile picture"
-        className="w-auto h-full"
-      />
+        className="w-auto h-8"
+      /></div>
       <FireflyButton
         text={isOpened ? "Gluttony" : "Greed"}
         backgroundColor={isOpened ? "#800020" : "#BD9B16"}

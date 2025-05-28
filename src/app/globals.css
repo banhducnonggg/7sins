@@ -109,6 +109,7 @@ body {
   color: var(--color-foreground);
   font-family: var(--font-obviously);
   font-weight: 500;
+  
 }
 
 .dark {
