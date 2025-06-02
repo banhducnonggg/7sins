@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Unica_One, Inter, Playfair_Display, Syne, Bebas_Neue, Space_Grotesk, Cormorant_Garamond, Alegreya_Sans_SC, Rubik_Mono_One } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -11,6 +12,59 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const unicaOne = Unica_One({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-title",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-body",
+});
+
+const playfairDisplay = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-pride",
+});
+
+const syne = Syne({
+  subsets: ["latin"],
+  variable: "--font-envy",
+});
+
+const bebasNeue = Bebas_Neue({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-wrath",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-sloth",
+});
+
+const cormorantGaramond = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["600"],
+  variable: "--font-greed",
+});
+
+const alegreyaSansSc = Alegreya_Sans_SC({
+  subsets: ["latin"],
+  weight: ["300"],
+  variable: "--font-lust",
+});
+
+const rubikMonoOne = Rubik_Mono_One({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-gluttony",
+});
+
+
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,7 +79,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${unicaOne.variable} ${inter.variable} ${playfairDisplay.variable} ${syne.variable} ${bebasNeue.variable} ${spaceGrotesk.variable} ${cormorantGaramond.variable} ${alegreyaSansSc.variable} ${rubikMonoOne.variable} antialiased`}
       >
         {children}
       </body>
