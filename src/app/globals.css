@@ -105,7 +105,7 @@
 }
 
 body {
-  background: var(--background);
+  background: var(--secondary);
   color: var(--foreground);
   font-family: var(--font-body);
 
