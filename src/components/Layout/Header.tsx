@@ -74,7 +74,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="fixed z-10 flex items-center justify-between w-5/6 gap-4 px-8 py-4 left-1/12 bottom-8 bg-background rounded-xl">
+    <header className="fixed z-10 flex items-center justify-between w-5/6 gap-4 px-8 py-4 border-2 left-1/12 bottom-8 bg-background border-foreground rounded-xl">
       <Link href="/">
         <Image
           src={"/dark-icon.svg"}
