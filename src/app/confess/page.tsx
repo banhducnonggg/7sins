@@ -3,9 +3,9 @@ import DefaultLayout from "@/components/Layout/DefaultLayout";
 export default function Confess() {
   return (
     <DefaultLayout>
-      <div className="flex flex-col items-center justify-center w-full h-screen gap-8 p-8 text-background bg-foreground">
+      <div className="flex flex-col items-center justify-center w-full h-screen gap-0 p-8 text-background bg-foreground">
         <h1 className="text-4xl md:text-6xl font-title">CONFESS</h1>
-        <p className="text-2xl md:4xl font-body">What tempts you?</p>
+        <p className="mb-8 text-2xl md:4xl font-body">What tempts you?</p>
         <form className="flex flex-col items-center justify-center w-full gap-8 p-4 md:w-5/6 lg:w-1/2 bg-secondary rounded-2xl">
           <textarea
             placeholder="Type slowly. Be honest."
