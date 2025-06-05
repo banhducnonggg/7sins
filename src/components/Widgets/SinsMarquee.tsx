@@ -49,7 +49,7 @@ const SinsDetails = [
 
 export default function SinsMarquee() {
   return (
-    <Marquee className="h-fit w-full" gradient gradientColor="#888888" pauseOnHover speed={88}>
+    <Marquee className="h-fit w-full" gradient gradientColor="#313131" pauseOnHover speed={110}>
       {SinsDetails.map((sin) => (
         <SinsCard
           key={sin.title}

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <DefaultLayout>
       <Hero />
-      <div className="w-full py-16">
+      <div className="w-full py-16 bg-gradient-to-r from-[#313131] via-background to-[#313131]">
         <SinsMarquee />
       </div>
       <About />
