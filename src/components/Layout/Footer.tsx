@@ -1,40 +1,38 @@
 import React from "react";
 import Link from "next/link";
 
-interface FooterProps {}
-
 const sevenDeadlySins = [
   {
     name: "Pride",
-    path: "/sins/pride",
+    path: "/pride",
   },
   {
     name: "Envy",
-    path: "/sins/envy",
+    path: "/envy",
   },
   {
     name: "Wrath",
-    path: "/sins/wrath",
+    path: "/wrath",
   },
   {
     name: "Sloth",
-    path: "/sins/sloth",
+    path: "/sloth",
   },
   {
     name: "Greed",
-    path: "/sins/greed",
+    path: "/greed",
   },
   {
     name: "Lust",
-    path: "/sins/lust",
+    path: "/lust",
   },
   {
     name: "Gluttony",
-    path: "/sins/gluttony",
+    path: "/gluttony",
   },
 ];
 
-const Footer: React.FC<FooterProps> = () => {
+const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (

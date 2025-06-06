@@ -5,7 +5,7 @@ export default function Sloth() {
     <DefaultLayout>
       <div className="flex items-center justify-center w-full h-screen bg-sloth-accent-dark">
         <h1 className="text-4xl md:text-6xl font-title text-sloth-accent-light">
-          "Minimal, but meaningful."
+          &quot;Minimal, but meaningful.&quot;
         </h1>
       </div>
     </DefaultLayout>

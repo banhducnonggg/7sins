@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronUpCircle, ChevronUp, ChevronDownCircle } from "lucide-react";
+import { ChevronUpCircle, ChevronDownCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
@@ -8,43 +8,43 @@ import React, { useState, useEffect } from "react";
 const sevenDeadlySins = [
   {
     name: "Pride",
-    path: "/sins/pride",
+    path: "/pride",
     text: "text-pride-accent font-pride",
     hover: "hover:text-pride-accent-light",
   },
   {
     name: "Envy",
-    path: "/sins/envy",
+    path: "/envy",
     text: "text-envy-accent font-envy",
     hover: "hover:text-envy-accent-light",
   },
   {
     name: "Wrath",
-    path: "/sins/wrath",
+    path: "/wrath",
     text: "text-wrath-accent font-wrath",
     hover: "hover:text-wrath-accent-light",
   },
   {
     name: "Sloth",
-    path: "/sins/sloth",
+    path: "/sloth",
     text: "text-sloth-accent font-sloth",
     hover: "hover:text-sloth-accent-light",
   },
   {
     name: "Greed",
-    path: "/sins/greed",
+    path: "/greed",
     text: "text-greed-accent font-greed",
     hover: "hover:text-greed-accent-light",
   },
   {
     name: "Lust",
-    path: "/sins/lust",
+    path: "/lust",
     text: "text-lust-accent font-lust",
     hover: "hover:text-lust-accent-light",
   },
   {
     name: "Gluttony",
-    path: "/sins/gluttony",
+    path: "/gluttony",
     text: "text-gluttony-accent font-gluttony",
     hover: "hover:text-gluttony-accent-light",
   },
