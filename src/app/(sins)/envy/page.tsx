@@ -5,7 +5,7 @@ export default function Envy() {
     <DefaultLayout>
       <div className="flex items-center justify-center w-full h-screen bg-envy-accent-dark">
         <h1 className="text-4xl md:text-6xl font-title text-pride-envy-light">
-          "What if it were mine?"
+          &quot;What if it were mine?&quot;
         </h1>
       </div>
     </DefaultLayout>

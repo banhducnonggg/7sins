@@ -5,7 +5,7 @@ export default function Lust() {
     <DefaultLayout>
       <div className="flex items-center justify-center w-full h-screen bg-lust-accent-dark">
         <h1 className="text-4xl md:text-6xl font-title text-lust-accent-light">
-          "Design that seduces"
+          &quot;Design that seduces&quot;
         </h1>
       </div>
     </DefaultLayout>

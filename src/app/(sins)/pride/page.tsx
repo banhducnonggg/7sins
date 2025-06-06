@@ -5,7 +5,7 @@ export default function Pride() {
     <DefaultLayout>
       <div className="flex items-center justify-center w-full h-screen bg-pride-accent-dark">
         <h1 className="text-4xl md:text-6xl font-title text-pride-accent-light">
-          "I create, therefore I am."
+          &quot;I create, therefore I am.&quot;
         </h1>
       </div>
     </DefaultLayout>
