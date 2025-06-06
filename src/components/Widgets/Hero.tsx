@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { HyperText } from "../magicui/hyper-text";
 
 // Define your array of background images
 const heroBackgroundImages = [
@@ -39,9 +40,9 @@ export default function Hero() {
       >
         fear of being ordinary
       </p>
-      <h1 className="tracking-wide text-[32dvw] font-title text-pride-accent z-1">
+      <HyperText className="tracking-wide text-[32dvw] font-title text-pride-accent z-1">
         1 on 1
-      </h1>
+      </HyperText>
     </section>
   );
 }
