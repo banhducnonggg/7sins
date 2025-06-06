@@ -27,6 +27,33 @@
   --gluttony-accent-dark: #301934;
 }
 
+/* Disable text selection and change cursor globally */
+* {
+  -webkit-user-select: none;  /* Safari */
+  -moz-user-select: none;     /* Firefox */
+  -ms-user-select: none;      /* IE10+/Edge */
+  user-select: none;          /* Standard */
+  cursor: none;            /* Change default cursor */
+}
+
+/* Allow text selection in input fields and textareas */
+input, textarea {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  cursor: text;
+}
+
+/* Allow text selection in code blocks if needed */
+pre, code {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  cursor: text;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -108,5 +135,4 @@ body {
   background: var(--secondary);
   color: var(--foreground);
   font-family: var(--font-body);
-
 }

@@ -40,7 +40,7 @@ export default function Hero() {
       >
         fear of being ordinary
       </p>
-      <HyperText className="tracking-wide text-[32dvw] font-title text-pride-accent z-1">
+      <HyperText animateOnHover={false} className="tracking-wide text-[32dvw] font-title text-pride-accent z-1">
         1 on 1
       </HyperText>
     </section>

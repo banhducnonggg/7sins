@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Unica_One, Inter, Playfair_Display, Syne, Bebas_Neue, Space_Grotesk, Cormorant_Garamond, Alegreya_Sans_SC, Rubik_Mono_One } from "next/font/google";
 import "./globals.css";
+import { SmoothCursor } from "@/components/ui/smooth-cursor";
 
 const unicaOne = Unica_One({
   subsets: ["latin"],
@@ -70,6 +71,7 @@ export default function RootLayout({
       <body
         className={`${unicaOne.variable} ${inter.variable} ${playfairDisplay.variable} ${syne.variable} ${bebasNeue.variable} ${spaceGrotesk.variable} ${cormorantGaramond.variable} ${alegreyaSansSc.variable} ${rubikMonoOne.variable} antialiased`}
       >
+        <SmoothCursor />
         {children}
       </body>
     </html>
