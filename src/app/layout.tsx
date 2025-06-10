@@ -71,7 +71,6 @@ export default function RootLayout({
       <body
         className={`${unicaOne.variable} ${inter.variable} ${playfairDisplay.variable} ${syne.variable} ${bebasNeue.variable} ${spaceGrotesk.variable} ${cormorantGaramond.variable} ${alegreyaSansSc.variable} ${rubikMonoOne.variable} antialiased`}
       >
-        <SmoothCursor />
         {children}
       </body>
     </html>

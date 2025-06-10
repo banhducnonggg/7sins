@@ -1,13 +1,55 @@
+"use client";
+
 import DefaultLayout from "@/components/Layout/DefaultLayout";
 import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
+import { useState, useEffect } from "react";
 
 export default function Wrath() {
+  const [showTyping, setShowTyping] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowTyping(false);
+    }, 3100);
+
+    // Cleanup the timer if the component unmounts before the timer fires
+    return () => clearTimeout(timer);
+  }, []); // Empty dependency array means this effect runs once on mount
+
   return (
     <DefaultLayout>
-      <div className="flex items-center justify-center w-full h-screen bg-wrath-accent-dark">
-        <VelocityScroll className="text-4xl md:text-6xl font-title text-wrath-accent-light">
-          &quot;Create to disrupt.&quot;
-        </VelocityScroll>
+      <div className="flex items-center justify-center w-full h-screen bg-wrath-accent-light">
+        <div className="relative w-full flex flex-col items-center justify-center w-full h-screen bg-wrath-accent-dark">
+          <VelocityScroll
+            className={`w-full text-4xl md:text-6xl font-title text-wrath-accent-light transition-opacity duration-5000 ease-in-out ${
+              showTyping ? "opacity-100" : "opacity-20 pointer-events-none"
+            }`}
+          >
+            &quot;Create to disrupt.&quot;
+          </VelocityScroll>
+          {/* <div
+            className={`
+              absolute transition-opacity duration-5000 ease-in-out
+              ${showTyping ? "opacity-100" : "opacity-0 pointer-events-none"}
+            `}
+          >
+            {showTyping && ( // Conditionally render to ensure animation starts correctly
+              <VelocityScroll className="w-full text-4xl md:text-6xl font-title text-wrath-accent-light">
+                &quot;Create to disrupt.&quot;
+              </VelocityScroll>
+            )}
+          </div> */}
+          <div
+            className={`
+              absolute transition-opacity duration-5000 ease-in-out
+              ${!showTyping ? "opacity-100" : "opacity-0 pointer-events-none"}
+            `}
+          >
+            <h1 className="text-4xl md:text-6xl font-wrath text-wrath-accent-light">
+              WRATH
+            </h1>
+          </div>
+        </div>
       </div>
     </DefaultLayout>
   );
