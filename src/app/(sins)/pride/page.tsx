@@ -2,6 +2,7 @@
 
 import DefaultLayout from "@/components/Layout/DefaultLayout";
 import { BoxReveal } from "@/components/magicui/box-reveal";
+import PrideContent from "@/components/Widgets/pride/PrideContent";
 import SubHero from "@/components/Widgets/pride/SubHero";
 import { useState, useEffect } from "react";
 
@@ -45,6 +46,8 @@ export default function Pride() {
             <h1 className="text-4xl md:text-6xl font-pride text-pride-accent-light">PRIDE</h1>
           </div>
         </div>
+
+        <PrideContent />
 
         <SubHero />
       </div>
