@@ -21,7 +21,7 @@ export default function Wrath() {
       <div className="flex items-center justify-center w-full h-screen bg-wrath-accent-light">
         <div className="relative w-full flex flex-col items-center justify-center w-full h-screen bg-wrath-accent-dark">
           <VelocityScroll
-            className={`w-full text-4xl md:text-6xl font-title text-wrath-accent-light transition-opacity duration-5000 ease-in-out ${
+            className={`w-full text-4xl md:text-6xl font-wrath text-wrath-accent-light transition-opacity duration-5000 ease-in-out ${
               showTyping ? "opacity-100" : "opacity-20 pointer-events-none"
             }`}
           >

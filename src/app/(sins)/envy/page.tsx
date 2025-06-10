@@ -30,7 +30,7 @@ export default function Envy() {
             {showTyping && ( // Conditionally render to ensure animation starts correctly
               <TypingAnimation
                 delay={310}
-                className="text-4xl md:text-6xl font-title text-envy-accent-light"
+                className="text-4xl md:text-6xl font-envy text-envy-accent-light"
               >
                 &quot;What if it were mine?&quot;
               </TypingAnimation>
