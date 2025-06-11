@@ -81,7 +81,7 @@ const Header = () => {
           alt={"next logo"}
           width={40}
           height={40}
-          className="transition-transform duration-300 ease-in-out transform scale-100 hover:scale-190"
+          className="transition-transform duration-300 ease-in-out transform scale-100 hover:scale-120"
         />
       </Link>
       {isMobile ? (
