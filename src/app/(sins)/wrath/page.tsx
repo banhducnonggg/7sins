@@ -19,9 +19,9 @@ export default function Wrath() {
   return (
     <DefaultLayout>
       <div className="flex items-center justify-center w-full h-screen bg-wrath-accent-light">
-        <div className="relative w-full flex flex-col items-center justify-center w-full h-screen bg-wrath-accent-dark">
+        <div className="relative flex flex-col items-center justify-center w-full h-screen bg-wrath-accent-dark">
           <VelocityScroll
-            className={`w-full text-4xl md:text-6xl font-wrath text-wrath-accent-light transition-opacity duration-5000 ease-in-out ${
+            className={`w-full text-2xl md:text-4xl lg:text-6xl font-wrath text-wrath-accent-light transition-opacity duration-5000 ease-in-out ${
               showTyping ? "opacity-100" : "opacity-20 pointer-events-none"
             }`}
           >
@@ -45,7 +45,7 @@ export default function Wrath() {
               ${!showTyping ? "opacity-100" : "opacity-0 pointer-events-none"}
             `}
           >
-            <h1 className="text-4xl md:text-6xl font-wrath text-wrath-accent-light">
+            <h1 className="text-2xl md:text-4xl lg:text-6xl font-wrath text-wrath-accent-light">
               WRATH
             </h1>
           </div>

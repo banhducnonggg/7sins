@@ -31,7 +31,7 @@ export default function Pride() {
           >
             {showTyping && ( // Conditionally render to ensure animation starts correctly
               <BoxReveal boxColor="#eaeaea">
-              <h1 className="text-4xl md:text-6xl font-pride text-pride-accent-light">
+              <h1 className="text-2xl md:text-4xl lg:text-6xl font-pride text-pride-accent-light">
                 &quot;I create, therefore I am.&quot;
               </h1>
             </BoxReveal>
@@ -43,7 +43,7 @@ export default function Pride() {
               ${!showTyping ? "opacity-100" : "opacity-0 pointer-events-none"}
             `}
           >
-            <h1 className="text-4xl md:text-6xl font-pride text-pride-accent-light">PRIDE</h1>
+            <h1 className="text-2xl md:text-4xl lg:text-6xl font-pride text-pride-accent-light">PRIDE</h1>
           </div>
         </div>
 

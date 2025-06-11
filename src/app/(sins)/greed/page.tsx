@@ -27,7 +27,7 @@ export default function Greed() {
             `}
           >
             {showTyping && ( // Conditionally render to ensure animation starts correctly
-              <FlipText className="text-4xl md:text-6xl font-greed text-greed-accent-light">
+              <FlipText className="text-2xl md:text-4xl lg:text-6xl font-greed text-greed-accent-light">
                 &quot;The art of monetization.&quot;
               </FlipText>
             )}
@@ -38,7 +38,7 @@ export default function Greed() {
               ${!showTyping ? "opacity-100" : "opacity-0 pointer-events-none"}
             `}
           >
-            <h1 className="text-4xl md:text-6xl font-greed text-greed-accent-light">
+            <h1 className="text-2xl md:text-4xl lg:text-6xl font-greed text-greed-accent-light">
               GREED
             </h1>
           </div>

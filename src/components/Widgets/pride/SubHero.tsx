@@ -20,7 +20,7 @@ export default function SubHero() {
       <div className="sticky top-0 h-screen overflow-hidden">
         <motion.div
           style={{ scale }}
-          className="absolute top-0 w-full h-full flex items-center justify-center"
+          className="absolute top-0 flex items-center justify-center w-full h-full"
         >
           <div className="relative w-[50vw] h-[50vh]">
             <Image
@@ -28,7 +28,7 @@ export default function SubHero() {
               fill
               alt="Pride"
               priority
-              className="object-contain w-full h-full"
+              className="object-contain w-full h-full sepia-29"
             />
           </div>
           <motion.div

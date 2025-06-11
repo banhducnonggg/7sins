@@ -10,7 +10,7 @@ export default function Envy() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowTyping(false);
-    }, 3100);
+    }, 5000);
 
     // Cleanup the timer if the component unmounts before the timer fires
     return () => clearTimeout(timer);
@@ -30,7 +30,7 @@ export default function Envy() {
             {showTyping && ( // Conditionally render to ensure animation starts correctly
               <TypingAnimation
                 delay={310}
-                className="text-4xl md:text-6xl font-envy text-envy-accent-light"
+                className="text-2xl md:text-4xl lg:text-6xl font-envy text-envy-accent-light"
               >
                 &quot;What if it were mine?&quot;
               </TypingAnimation>
@@ -42,7 +42,7 @@ export default function Envy() {
               ${!showTyping ? "opacity-100" : "opacity-0 pointer-events-none"}
             `}
           >
-            <h1 className="text-4xl md:text-6xl font-envy text-envy-accent-light">ENVY</h1>
+            <h1 className="text-2xl md:text-4xl lg:text-6xl font-envy text-envy-accent-light">ENVY</h1>
           </div>
         </div>
       </div>

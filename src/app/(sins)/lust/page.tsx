@@ -8,7 +8,7 @@ export default function Lust() {
         <div className="relative flex flex-col items-center justify-center w-full h-screen bg-lust-accent-dark">
           <MorphingText
             texts={["Design that seduces", "Lust"]}
-            className="text-4xl md:text-6xl font-lust text-lust-accent-light"
+            className="text-2xl md:text-4xl lg:text-6xl font-lust text-lust-accent-light"
           ></MorphingText>
         </div>
       </div>

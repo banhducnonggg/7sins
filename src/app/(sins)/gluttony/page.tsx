@@ -35,7 +35,7 @@ export default function Gluttony() {
             {showTyping && ( // Conditionally render to ensure animation starts correctly
               <SpinningText
                 radius={4}
-                className="text-4xl md:text-6xl font-gluttony text-gluttony-accent-light"
+                className="text-2xl md:text-4xl lg:text-6xl font-gluttony text-gluttony-accent-light"
               >
                 More is more • More is more •
               </SpinningText>
@@ -47,7 +47,7 @@ export default function Gluttony() {
               ${!showTyping ? "opacity-100" : "opacity-0 pointer-events-none"}
             `}
           >
-            <h1 className="text-4xl md:text-6xl font-gluttony text-gluttony-accent-light">
+            <h1 className="text-2xl md:text-4xl lg:text-6xl font-gluttony text-gluttony-accent-light">
               GLUTTONY
             </h1>
           </div>
