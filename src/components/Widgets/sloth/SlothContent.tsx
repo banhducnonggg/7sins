@@ -24,14 +24,14 @@ export default function SlothContent() {
               alt="Sloth image 0"
               width={400}
               height={400}
-              className="w-full h-auto transition-all duration-640 hover:scale-88 rounded-2xl"
+              className="w-full h-auto transition-all duration-640 hover:scale-96 rounded-2xl"
             />
             <Image
               src={images[1].src}
               alt="Sloth image 0"
               width={400}
               height={400}
-              className="w-full h-auto transition-all duration-640 hover:scale-88 rounded-2xl"
+              className="w-full h-auto transition-all duration-640 hover:scale-96 rounded-2xl"
             />
           </div>
           <div className="flex flex-col w-full gap-8">
@@ -40,7 +40,7 @@ export default function SlothContent() {
               alt="Sloth image 0"
               width={400}
               height={400}
-              className="w-full h-auto transition-all duration-640 hover:scale-88 rounded-2xl"
+              className="w-full h-auto transition-all duration-640 hover:scale-96 rounded-2xl"
             />
             <h1 className="hidden text-center text-md font-sloth text-sloth-accent-dark lg:text-xl md:block">
               Maybe this will be completed later
@@ -50,7 +50,7 @@ export default function SlothContent() {
               alt="Sloth image 0"
               width={400}
               height={400}
-              className="w-full h-auto transition-all duration-640 hover:scale-88 rounded-2xl"
+              className="w-full h-auto transition-all duration-640 hover:scale-96 rounded-2xl"
             />
           </div>
           <div className="flex flex-col w-full gap-8">
@@ -59,14 +59,14 @@ export default function SlothContent() {
               alt="Sloth image 0"
               width={400}
               height={400}
-              className="w-full h-auto transition-all duration-640 hover:scale-88 rounded-2xl"
+              className="w-full h-auto transition-all duration-640 hover:scale-96 rounded-2xl"
             />
             <Image
               src={images[5].src}
               alt="Sloth image 0"
               width={400}
               height={400}
-              className="w-full h-auto transition-all duration-640 hover:scale-88 rounded-2xl"
+              className="w-full h-auto transition-all duration-640 hover:scale-96 rounded-2xl"
             />
           </div>
         </div>
@@ -84,7 +84,7 @@ export default function SlothContent() {
                 src={image.src}
                 alt={`Sloth image ${index + 1}`}
                 fill
-                className="object-cover transition-all duration-640 hover:scale-88"
+                className="object-cover transition-all duration-640 hover:scale-96"
                 sizes="(max-width: 768px) 50vw, 33vw"
               />
             </div>
