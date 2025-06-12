@@ -10,7 +10,7 @@ export default function Wrath() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowTyping(false);
-    }, 3100);
+    }, 960);
 
     // Cleanup the timer if the component unmounts before the timer fires
     return () => clearTimeout(timer);
@@ -21,27 +21,15 @@ export default function Wrath() {
       <div className="flex items-center justify-center w-full h-screen bg-wrath-accent-light">
         <div className="relative flex flex-col items-center justify-center w-full h-screen bg-wrath-accent-dark">
           <VelocityScroll
-            className={`w-full text-2xl md:text-4xl lg:text-6xl font-wrath text-wrath-accent-light transition-opacity duration-5000 ease-in-out ${
+            className={`w-full text-2xl md:text-4xl lg:text-6xl font-wrath text-wrath-accent-light transition-opacity duration-3100 ease-in-out ${
               showTyping ? "opacity-100" : "opacity-20 pointer-events-none"
             }`}
           >
             &quot;Create to disrupt.&quot;
           </VelocityScroll>
-          {/* <div
-            className={`
-              absolute transition-opacity duration-5000 ease-in-out
-              ${showTyping ? "opacity-100" : "opacity-0 pointer-events-none"}
-            `}
-          >
-            {showTyping && ( // Conditionally render to ensure animation starts correctly
-              <VelocityScroll className="w-full text-4xl md:text-6xl font-title text-wrath-accent-light">
-                &quot;Create to disrupt.&quot;
-              </VelocityScroll>
-            )}
-          </div> */}
           <div
             className={`
-              absolute transition-opacity duration-5000 ease-in-out
+              absolute transition-opacity duration-3100 ease-in-out
               ${!showTyping ? "opacity-100" : "opacity-0 pointer-events-none"}
             `}
           >
