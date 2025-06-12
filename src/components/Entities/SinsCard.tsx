@@ -17,7 +17,7 @@ export default function SinsCard({
   return (
     <Link
       href={link}
-      className="flex flex-col justify-center items-center p-8 gap-4 rounded-xl bg-background w-80 h-[48dvh] mx-8 border-2 border-foreground grayscale hover:grayscale-0 transition duration-310"
+      className="flex flex-col cursor-pointer justify-center items-center p-8 gap-4 rounded-xl bg-background w-80 h-[48dvh] mx-8 border-2 border-foreground grayscale hover:grayscale-0 transition duration-310"
     >
       <Image
         src={image}

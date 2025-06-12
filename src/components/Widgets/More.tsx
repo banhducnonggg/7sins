@@ -17,7 +17,7 @@ export default function More() {
         If you want some more,{" "}
         <span
           onClick={scrollToAbout}
-          className="transition-all ease-in-out hover:text-foreground font-title duration-310"
+          className="transition-all ease-in-out cursor-pointer hover:text-wrath-accent-light font-title duration-310"
         >
           confess it,
         </span>{" "}

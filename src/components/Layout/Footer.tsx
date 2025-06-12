@@ -48,7 +48,7 @@ const Footer = () => {
             <Link
               key={sin.name}
               href={sin.path}
-              className="text-sm no-underline transition-all ease-in-out scale-100 duration-310 hover:scale-110 sm:text-base hover:text-background hover:underline"
+              className="text-sm no-underline transition-all ease-in-out scale-100 cursor-pointer duration-310 hover:scale-110 sm:text-base hover:text-background hover:underline"
             >
               {sin.name}
             </Link>

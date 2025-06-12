@@ -18,7 +18,7 @@ export default function About() {
             </p>
             {/* Confess Button */}
             <Link href="/confess" className="hidden lg:block">
-              <button className="px-6 py-3 text-sm font-semibold tracking-wide uppercase transition ease-in border-2 rounded-full bg-none text-foreground border-foreground hover:bg-foreground hover:text-background duration-310">
+              <button className="px-6 py-3 text-sm font-semibold tracking-wide uppercase transition ease-in border-2 rounded-full cursor-pointer bg-none text-foreground border-foreground hover:bg-foreground hover:text-background duration-310">
                 Confess your sin(s)
               </button>
             </Link>
@@ -36,7 +36,7 @@ export default function About() {
         </div>
         {/* Confess Button */}
         <Link href="/confess" className="block lg:hidden">
-          <button className="px-6 py-3 text-sm font-semibold tracking-wide uppercase rounded-full bg-foreground text-background">
+          <button className="px-6 py-3 text-sm font-semibold tracking-wide uppercase rounded-full cursor-pointer bg-foreground text-background">
             Confess your sin(s)
           </button>
         </Link>
