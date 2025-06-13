@@ -99,6 +99,8 @@ export const metadata: Metadata = {
     "visual confession",
     "human impulses",
     "contemporary art lab",
+    "1on1.vercel.app",
+    "fear of being ordinary"
   ],
   authors: [{ name: "1 on 1 Creative Lab" }],
   creator: "1 on 1 Creative Lab",
