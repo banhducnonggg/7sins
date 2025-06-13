@@ -3,6 +3,7 @@
 import DefaultLayout from "@/components/Layout/DefaultLayout";
 import { SpinningText } from "@/components/magicui/spinning-text";
 import { useState, useEffect } from "react";
+import GluttonyContent from "@/components/Widgets/gluttony/GluttonyContent";
 
 export default function Gluttony() {
   const [showTyping, setShowTyping] = useState(true);
@@ -18,7 +19,7 @@ export default function Gluttony() {
 
   return (
     <DefaultLayout>
-      <div className="flex items-center justify-center w-full min-h-screen bg-gluttony-accent-light">
+      <div className="flex flex-col items-center justify-center w-full min-h-screen bg-gluttony-accent-light">
         {/* <h1 className="text-4xl md:text-6xl font-title text-gluttony-accent-light">
           &quot;More is more.&quot;
         </h1> */}
@@ -52,6 +53,7 @@ export default function Gluttony() {
             </h1>
           </div>
         </div>
+        <GluttonyContent />
       </div>
     </DefaultLayout>
   );

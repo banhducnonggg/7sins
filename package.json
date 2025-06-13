@@ -1,6 +1,6 @@
 {
   "name": "7sins",
-  "version": "1.22.4",
+  "version": "1.23.4",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",

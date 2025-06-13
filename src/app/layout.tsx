@@ -65,9 +65,12 @@ const rubikMonoOne = Rubik_Mono_One({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://1on1.vercel.app/"),
-  title: "1 on 1 Creative Lab | Fear of being ordinary",
+  title: {
+    default: "1 on 1 Creative Lab | Fear of being ordinary",
+    template: "%s | 1 on 1 Creative Lab"
+  },
   description:
-    "Explore the sin of Pride through creative expression. A visual journey into self-creation and artistic identity.",
+    "A creative lab confronting human impulses — a mirror of identity, lust, rage, and beauty. Each sin is a visual confession.",
   keywords: [
     "creative lab",
     "art",
@@ -86,13 +89,33 @@ export const metadata: Metadata = {
     "lust",
     "gluttony",
     "virtues",
+    "1on1",
+    "1 on 1",
+    "one on one",
+    "One on One",
+    "oneonone",
+    "creative expression",
+    "artistic identity",
+    "visual confession",
+    "human impulses",
+    "contemporary art lab",
   ],
+  authors: [{ name: "1 on 1 Creative Lab" }],
+  creator: "1 on 1 Creative Lab",
+  publisher: "1 on 1 Creative Lab",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   openGraph: {
     title: "1 on 1 Creative Lab | Fear of being ordinary",
     description:
-      "Explore the sin of Pride through creative expression. A visual journey into self-creation and artistic identity.",
+      "A creative lab confronting human impulses — a mirror of identity, lust, rage, and beauty. Each sin is a visual confession.",
     type: "website",
     url: "https://1on1.vercel.app/",
+    siteName: "1 on 1 Creative Lab",
+    locale: "en_US",
     images: [
       {
         url: "/dark-ava.webp",
@@ -101,6 +124,12 @@ export const metadata: Metadata = {
         alt: "1 on 1 Creative Lab",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "1 on 1 Creative Lab | Fear of being ordinary",
+    description: "A creative lab confronting human impulses — a mirror of identity, lust, rage, and beauty.",
+    images: ["/dark-ava.webp"],
   },
   icons: {
     icon: [
@@ -115,7 +144,7 @@ export const metadata: Metadata = {
       {
         rel: "mask-icon",
         url: "/safari-pinned-tab.svg",
-        color: "#000000",
+        color: "#100c08",
       },
     ],
   },
