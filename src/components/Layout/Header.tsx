@@ -81,7 +81,7 @@ const Header = () => {
           alt={"next logo"}
           width={40}
           height={40}
-          className="transition-transform duration-300 ease-in-out transform scale-100 hover:scale-190"
+          className="transition-transform duration-300 ease-in-out transform scale-100 cursor-pointer hover:scale-120"
         />
       </Link>
       {isMobile ? (
@@ -104,7 +104,7 @@ const Header = () => {
                 <Link
                   key={sin.name}
                   href={sin.path}
-                  className={`${sin.text} text-xl text-center w-full`}
+                  className={`${sin.text} text-xl text-center w-full cursor-pointer`}
                 >
                   {sin.name}
                 </Link>
@@ -119,7 +119,7 @@ const Header = () => {
               <Link
                 key={sin.name}
                 href={sin.path}
-                className={`${sin.text} ${sin.hover} text-xl text-center w-full scale-100 hover:scale-120 transform transition-transform duration-300 ease-in-out flex`}
+                className={`${sin.text} ${sin.hover} cursor-pointer text-xl text-center w-full scale-100 hover:scale-120 transform transition-transform duration-300 ease-in-out flex`}
               >
                 {sin.name}
               </Link>
