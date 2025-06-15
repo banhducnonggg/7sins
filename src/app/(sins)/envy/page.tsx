@@ -2,6 +2,7 @@
 
 import DefaultLayout from "@/components/Layout/DefaultLayout";
 import { TypingAnimation } from "@/components/magicui/typing-animation";
+import EnvyContext from "@/components/Widgets/envy/EnvyContent";
 import { useState, useEffect } from "react";
 
 export default function Envy() {
@@ -45,6 +46,8 @@ export default function Envy() {
             <h1 className="text-2xl md:text-4xl lg:text-6xl font-envy text-envy-accent-light">ENVY</h1>
           </div>
         </div>
+
+        <EnvyContext />
       </div>
     </DefaultLayout>
   );
