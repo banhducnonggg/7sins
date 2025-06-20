@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function SubHero() {
   return (
-    <div className="relative z-10 flex flex-row items-end justify-center w-full min-h-screen p-0 overflow-hidden max-w-screen bg-conic from-lust-accent-dark to-lust-accent-light">
+    <div className="relative z-20 flex flex-row items-end justify-center w-full min-h-screen p-0 overflow-hidden max-w-screen bg-conic from-lust-accent-dark to-lust-accent-light">
       <Image
         src={"/virtues/matcha.webp"}
         alt={"Matcha"}
