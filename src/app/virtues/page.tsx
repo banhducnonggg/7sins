@@ -5,7 +5,7 @@ import VFooter from "@/components/Widgets/virtues/VFooter";
 
 export default function Virtues() {
   return (
-    <div className="flex flex-col items-center justify-center w-full min-h-screen max-w-screen bg-lust-accent-light">
+    <div className="flex flex-col items-center justify-center w-full min-h-screen max-w-screen bg-gradient-to-r from-lust-accent-light to-lust-accent-dark">
       <div className="relative z-10 flex flex-col items-center justify-center w-full h-screen bg-lust-accent-dark">
         <MorphingText
           texts={["An Easter Egg", "I meet this girl", "I love her so much"]}
