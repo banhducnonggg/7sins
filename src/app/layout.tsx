@@ -128,7 +128,6 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
     title: "1 on 1 Creative Lab | Fear of being ordinary",
     description: "A creative lab confronting human impulses — a mirror of identity, lust, rage, and beauty.",
     images: ["/dark-ava.webp"],

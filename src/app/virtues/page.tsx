@@ -38,4 +38,9 @@ export const generateMetadata = () => ({
     locale: "en_US",
     type: "website",
   },
+  twitter: {
+    title: "The Easter Egg",
+    description: "Discover the easter egg.",
+    images: ["/lust/lust.png"],
+  },
 });
