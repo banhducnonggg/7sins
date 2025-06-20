@@ -5,7 +5,7 @@ export default function SubHero() {
     <div
       className="relative z-20 flex flex-row items-end justify-center w-full min-h-screen p-0 overflow-hidden max-w-screen"
       style={{
-        background: "conic-gradient(from 180deg at 50% 50%, #4b0082, #ffb6c1)",
+        background: "conic-gradient(from 0deg at 50% 50%, #4b0082, #ffb6c1)",
       }}
     >
       <Image
