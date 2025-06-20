@@ -1,6 +1,6 @@
 {
   "name": "7sins",
-  "version": "2.28.8",
+  "version": "29.2.25",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@img-comparison-slider/react": "^8.0.2",
     "clsx": "^2.1.1",
     "framer-motion": "^12.16.0",
