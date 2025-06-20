@@ -9,10 +9,28 @@ export const metadata: Metadata = {
       follow: false,
     },
   },
+  title: "The Easter Egg",
+  description: "Discover the easter egg.",
   openGraph: {
-    title: "Virtues",
-    description: "The Easter Egg",
+    title: "The Easter Egg",
+    description: "Discover the easter egg.",
+    url: "https://1on1.vercel.app/virtues",
+    siteName: "1 on 1",
+    images: [
+      {
+        url: "/lust/lust.png",
+        width: 1801,
+        height: 1800,
+        alt: "Virtues Open Graph Image",
+      },
+    ],
+    locale: "en_US",
     type: "website",
-    images: "/home/gluttony.png"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Easter Egg",
+    description: "Discover the easter egg.",
+    images: ["/lust/lust.png"],
   },
 };
