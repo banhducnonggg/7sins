@@ -67,7 +67,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://1on1.vercel.app/"),
   title: {
     default: "1 on 1 Creative Lab | Fear of being ordinary",
-    template: "%s | 1 on 1 Creative Lab"
+    template: "%s | 1 on 1 Creative Lab",
   },
   description:
     "A creative lab confronting human impulses — a mirror of identity, lust, rage, and beauty. Each sin is a visual confession.",
@@ -100,7 +100,7 @@ export const metadata: Metadata = {
     "human impulses",
     "contemporary art lab",
     "1on1.vercel.app",
-    "fear of being ordinary"
+    "fear of being ordinary",
   ],
   authors: [{ name: "1 on 1 Creative Lab" }],
   creator: "1 on 1 Creative Lab",
@@ -128,8 +128,10 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
+    card: "summary_large_image",
     title: "1 on 1 Creative Lab | Fear of being ordinary",
-    description: "A creative lab confronting human impulses — a mirror of identity, lust, rage, and beauty.",
+    description:
+      "A creative lab confronting human impulses — a mirror of identity, lust, rage, and beauty.",
     images: ["/dark-ava.webp"],
   },
   icons: {
@@ -161,9 +163,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
 };

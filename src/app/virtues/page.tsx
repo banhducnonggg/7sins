@@ -39,6 +39,7 @@ export const generateMetadata = () => ({
     type: "website",
   },
   twitter: {
+    card: "summary_large_image",
     title: "The Easter Egg",
     description: "Discover the easter egg.",
     images: ["/lust/lust.png"],
