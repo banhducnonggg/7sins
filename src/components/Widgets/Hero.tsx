@@ -5,16 +5,16 @@ import { HyperText } from "../magicui/hyper-text";
 
 // Define your array of background images
 const heroBackgroundImages = [
-  "/home/hero-1.png",
-  "/home/hero-2.png",
-  "/home/hero-3.png",
-  "/home/hero-4.png",
-  "/home/hero-5.png",
-  "/home/hero-6.png",
-  "/home/hero-7.png",
-  "/home/hero-8.png",
-  "/home/hero-9.png",
-  "/home/hero-10.png",
+  "/home/hero-1.webp",
+  "/home/hero-2.webp",
+  "/home/hero-3.webp",
+  "/home/hero-4.webp",
+  "/home/hero-5.webp",
+  "/home/hero-6.webp",
+  "/home/hero-7.webp",
+  "/home/hero-8.webp",
+  "/home/hero-9.webp",
+  "/home/hero-10.webp",
 ];
 
 export default function Hero() {
@@ -40,7 +40,7 @@ export default function Hero() {
       >
         fear of being ordinary
       </p>
-      <HyperText animateOnHover={false} className="tracking-wide text-[32dvw] font-title text-pride-accent z-1">
+      <HyperText animateOnHover={false} className="tracking-wide text-[28dvw] font-title text-pride-accent z-1">
         1 on 1
       </HyperText>
     </section>

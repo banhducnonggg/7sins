@@ -27,7 +27,7 @@ export default function About() {
           {/* Optional Portrait/Collage Section */}
           <div className="relative w-full md:w-2/3 lg:w-1/2 mx-auto aspect-[3/2] mb-12">
             <Image
-              src={"/home/about.png"}
+              src={"/home/about.webp"}
               alt="Lab portrait"
               fill
               className="object-cover transition shadow-xl rounded-xl grayscale hover:grayscale-0 duration-310"
