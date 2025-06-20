@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  robots: {
-    index: false,
-    follow: false,
-    googleBot: {
-      index: false,
-      follow: false,
-    },
-  },
+  // robots: {
+  //   index: false,
+  //   follow: false,
+  //   googleBot: {
+  //     index: false,
+  //     follow: false,
+  //   },
+  // },
   title: "The Easter Egg",
   description: "Discover the easter egg.",
   openGraph: {
