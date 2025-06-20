@@ -2,6 +2,7 @@
 
 import DefaultLayout from "@/components/Layout/DefaultLayout";
 import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
+import WrathContent from "@/components/Widgets/wrath/WrathContent";
 import { useState, useEffect } from "react";
 
 export default function Wrath() {
@@ -18,7 +19,7 @@ export default function Wrath() {
 
   return (
     <DefaultLayout>
-      <div className="flex items-center justify-center w-full h-screen bg-wrath-accent-light">
+      <div className="flex flex-col items-center justify-center w-full h-screen bg-wrath-accent-light">
         <div className="relative flex flex-col items-center justify-center w-full h-screen bg-wrath-accent-dark">
           <VelocityScroll
             className={`w-full text-2xl md:text-4xl lg:text-6xl font-wrath text-wrath-accent-light transition-opacity duration-3100 ease-in-out ${
@@ -38,7 +39,10 @@ export default function Wrath() {
             </h1>
           </div>
         </div>
+
       </div>
+      <WrathContent />
+
     </DefaultLayout>
   );
 }
