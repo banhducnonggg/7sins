@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useTransform, motion, useScroll } from "framer-motion";
 import { useRef } from "react";
+import type { MotionValue } from "framer-motion";
 
 
 type WrathCardProps = {
@@ -10,8 +11,8 @@ type WrathCardProps = {
   src: string;
   alt: string;
   color: string;
-  progress: any;
-  range: any;
+  progress: MotionValue<number>;
+  range: [number, number];
   targetScale: number;
 };
 

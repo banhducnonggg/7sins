@@ -2,6 +2,7 @@
 import { cn } from "@/lib/utils";
 import { motion, Transition, Variants } from "motion/react";
 import React, { CSSProperties } from "react";
+import { easeInOut } from "framer-motion";
 
 type SpinningTextProps = {
   children: string | string[];
@@ -20,7 +21,7 @@ type SpinningTextProps = {
 
 const BASE_TRANSITION = {
   repeat: Infinity,
-  ease: "linear",
+  ease: easeInOut,
 };
 
 const BASE_ITEM_VARIANTS = {
