@@ -2,6 +2,7 @@
 
 import DefaultLayout from "@/components/Layout/DefaultLayout";
 import { FlipText } from "@/components/magicui/flip-text";
+import GreedContent from "@/components/Widgets/greed/GreedContent";
 import { useState, useEffect } from "react";
 
 export default function Greed() {
@@ -18,7 +19,7 @@ export default function Greed() {
 
   return (
     <DefaultLayout>
-      <div className="flex items-center justify-center w-full min-h-screen bg-greed-accent-light">
+      <div className="flex flex-col items-center justify-center w-full min-h-screen bg-greed-accent-light">
         <div className="relative flex flex-col items-center justify-center w-full h-screen bg-greed-accent-dark">
           <div
             className={`
@@ -28,7 +29,7 @@ export default function Greed() {
           >
             {showTyping && ( // Conditionally render to ensure animation starts correctly
               <FlipText className="text-2xl md:text-4xl lg:text-6xl font-greed text-greed-accent-light">
-                &quot;The art of monetization.&quot;
+                &quot;Enough is never enough.&quot;
               </FlipText>
             )}
           </div>
@@ -43,6 +44,8 @@ export default function Greed() {
             </h1>
           </div>
         </div>
+
+        <GreedContent />
       </div>
     </DefaultLayout>
   );
