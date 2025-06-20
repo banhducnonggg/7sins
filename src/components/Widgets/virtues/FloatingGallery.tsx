@@ -1,19 +1,19 @@
 "use client";
 
 import Image from "next/image";
-import { useRef, useState } from "react";
-import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion';
+import { useRef } from "react";
+import { motion, useMotionValue, useSpring } from 'framer-motion';
 
 const floating = [
-  "/virtues/love-1.png",
-  "/virtues/love-2.png",
-  "/virtues/love-3.png",
-  "/virtues/love-4.png",
-  "/virtues/love-5.png",
-  "/virtues/love-6.png",
-  "/virtues/love-7.png",
-  "/virtues/love-8.png",
-  "/virtues/love-9.png",
+  "/virtues/love-1.webp",
+  "/virtues/love-2.webp",
+  "/virtues/love-3.webp",
+  "/virtues/love-4.webp",
+  "/virtues/love-5.webp",
+  "/virtues/love-6.webp",
+  "/virtues/love-7.webp",
+  "/virtues/love-8.webp",
+  "/virtues/love-9.webp",
 ];
 
 export default function Floating() {

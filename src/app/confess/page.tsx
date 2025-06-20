@@ -2,25 +2,34 @@
 
 import DefaultLayout from "@/components/Layout/DefaultLayout";
 import { useState, FormEvent, ChangeEvent } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function Confess() {
-  const [confession, setConfession] = useState("");
+  const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault(); // Prevent default form submission
-    console.log({
-      confession,
-      email,
-    });
-    // Here you would typically send the data to a backend API
-    // For now, we're just logging it.
+    event.preventDefault();
 
-    // You might want to clear the form after submission:
-    // setConfession("");
-    // setEmail("");
-    setConfession("We received your confession");
-    setEmail("Reload the page for another confession");
+    emailjs.send(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+      {
+        message,
+        email,
+      },
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+    )
+    .then(
+      () => {
+        setMessage("Aight your confession is coming to hell");
+        setEmail("Reload the page for another one");
+      },
+      () => {
+        setMessage("There was an error. Try again.");
+        setEmail("");
+      }
+    );
   };
 
   return (
@@ -35,9 +44,10 @@ export default function Confess() {
           <textarea
             placeholder="Type slowly. Be honest."
             className="w-full h-40 p-4 rounded-lg bg-background text-foreground"
-            value={confession}
+            value={message}
+            required
             onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
-              setConfession(e.target.value)
+              setMessage(e.target.value)
             }
           />
           <input

@@ -1,5 +1,6 @@
 import { MorphingText } from "@/components/magicui/morphing-text";
 import Floating from "@/components/Widgets/virtues/FloatingGallery";
+import SubHero from "@/components/Widgets/virtues/SubHero";
 import VFooter from "@/components/Widgets/virtues/VFooter";
 
 export default function Virtues() {
@@ -11,6 +12,7 @@ export default function Virtues() {
             className="w-full text-2xl md:text-4xl font-title text-lust-accent-light"
           ></MorphingText>
         </div>
+        <SubHero />
         <Floating />
         <VFooter />
       </div>
