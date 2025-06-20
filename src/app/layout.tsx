@@ -12,6 +12,7 @@ import {
 } from "next/font/google";
 import "./globals.css";
 import AudioPlayer from "@/components/Entities/AudioPlayer";
+import { Analytics } from "@vercel/analytics/next"
 
 const unicaOne = Unica_One({
   subsets: ["latin"],
@@ -182,6 +183,7 @@ export default function RootLayout({
       >
         <AudioPlayer />
         {children}
+        <Analytics />
       </body>
     </html>
   );
