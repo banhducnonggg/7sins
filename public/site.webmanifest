@@ -67,6 +67,11 @@
       "name": "Gluttony",
       "url": "/gluttony",
       "description": "Explore the sin of Gluttony"
+    },
+    {
+      "name": "The Easter Egg",
+      "url": "/virtues",
+      "description": "Discover the easter egg."
     }
   ],
   "lang": "en-US",
