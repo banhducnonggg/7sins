@@ -29,7 +29,7 @@ export const generateMetadata = () => ({
     siteName: "1 on 1",
     images: [
       {
-        url: "/lust/lust.png",
+        url: "https://1on1.vercel.app/lust/lust.png",
         width: 1801,
         height: 1800,
         alt: "Virtues Open Graph Image",
@@ -42,6 +42,6 @@ export const generateMetadata = () => ({
     card: "summary_large_image",
     title: "The Easter Egg",
     description: "Discover the easter egg.",
-    images: ["/lust/lust.png"],
+    images: ["https://1on1.vercel.app/lust/lust.png"],
   },
 });
