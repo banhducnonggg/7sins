@@ -1,0 +1,80 @@
+{
+  "name": "1 on 1 Creative Lab",
+  "short_name": "1 on 1",
+  "description": "A creative lab confronting human impulses — a mirror of identity, lust, rage, and beauty. Each sin is a visual confession.",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#100c08",
+  "background_color": "#100c08",
+  "display": "standalone",
+  "start_url": "/",
+  "orientation": "portrait",
+  "scope": "/",
+  "categories": ["art", "design", "creative"],
+  "screenshots": [
+    {
+      "src": "/dark-ava.webp",
+      "sizes": "1801x1800",
+      "type": "image/webp",
+      "platform": "wide",
+      "label": "1 on 1 Creative Lab Homepage"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Pride",
+      "url": "/pride",
+      "description": "Explore the sin of Pride"
+    },
+    {
+      "name": "Envy",
+      "url": "/envy",
+      "description": "Explore the sin of Envy"
+    },
+    {
+      "name": "Wrath",
+      "url": "/wrath",
+      "description": "Explore the sin of Wrath"
+    },
+    {
+      "name": "Sloth",
+      "url": "/sloth",
+      "description": "Explore the sin of Sloth"
+    },
+    {
+      "name": "Greed",
+      "url": "/greed",
+      "description": "Explore the sin of Greed"
+    },
+    {
+      "name": "Lust",
+      "url": "/lust",
+      "description": "Explore the sin of Lust"
+    },
+    {
+      "name": "Gluttony",
+      "url": "/gluttony",
+      "description": "Explore the sin of Gluttony"
+    },
+    {
+      "name": "The Easter Egg",
+      "url": "/virtues",
+      "description": "Discover the easter egg."
+    }
+  ],
+  "lang": "en-US",
+  "dir": "ltr",
+  "prefer_related_applications": false
+} 

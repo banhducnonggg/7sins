@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+:root {
+  --background: #100c08;
+  --foreground: #eaeaea;
+  --secondary: #888888;
+  --pride-accent: #ffd700;
+  --pride-accent-light: #fff8dc;
+  --pride-accent-dark: #a67c00;
+  --envy-accent: #50c878;
+  --envy-accent-light: #c0fccc;
+  --envy-accent-dark: #004225;
+  --wrath-accent: #dc143c;
+  --wrath-accent-light: #ff6f61;
+  --wrath-accent-dark: #8b0000;
+  --sloth-accent: #8da7be;
+  --sloth-accent-light: #e0f7fa;
+  --sloth-accent-dark: #4b515d;
+  --greed-accent: #006400;
+  --greed-accent-light: #a0db8e;
+  --greed-accent-dark: #1a1a1a;
+  --lust-accent: #c71585;
+  --lust-accent-light: #ffb6c1;
+  --lust-accent-dark: #4b0082;
+  --gluttony-accent: #9932cc;
+  --gluttony-accent-light: #ffd1dc;
+  --gluttony-accent-dark: #301934;
+}
+
+/* Disable text selection and change cursor globally */
+* {
+  -webkit-user-select: none;  /* Safari */
+  -moz-user-select: none;     /* Firefox */
+  -ms-user-select: none;      /* IE10+/Edge */
+  user-select: none;          /* Standard */
+  cursor: default;            /* Change default cursor */
+}
+
+/* Allow text selection in input fields and textareas */
+input, textarea {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  cursor: text;
+}
+
+/* Allow text selection in code blocks if needed */
+pre, code {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  cursor: text;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-secondary: var(--secondary);
+
+  --color-pride-accent: var(--pride-accent);
+  --color-pride-accent-light: var(--pride-accent-light);
+  --color-pride-accent-dark: var(--pride-accent-dark);
+  --color-envy-accent: var(--envy-accent);
+  --color-envy-accent-light: var(--envy-accent-light);
+  --color-envy-accent-dark: var(--envy-accent-dark);
+  --color-wrath-accent: var(--wrath-accent);
+  --color-wrath-accent-light: var(--wrath-accent-light);
+  --color-wrath-accent-dark: var(--wrath-accent-dark);
+  --color-sloth-accent: var(--sloth-accent);
+  --color-sloth-accent-light: var(--sloth-accent-light);
+  --color-sloth-accent-dark: var(--sloth-accent-dark);
+  --color-greed-accent: var(--greed-accent);
+  --color-greed-accent-light: var(--greed-accent-light);
+  --color-greed-accent-dark: var(--greed-accent-dark);
+  --color-lust-accent: var(--lust-accent);
+  --color-lust-accent-light: var(--lust-accent-light);
+  --color-lust-accent-dark: var(--lust-accent-dark);
+  --color-gluttony-accent: var(--gluttony-accent);
+  --color-gluttony-accent-light: var(--gluttony-accent-light);
+  --color-gluttony-accent-dark: var(--gluttony-accent-dark);
+
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-title);
+
+  --font-title: 'Unica One', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-pride: 'Playfair Display', serif;
+  --font-envy: 'Syne', serif;
+  --font-wrath: 'Bebas Neue', cursive;
+  --font-sloth: 'Space Grotesk', sans-serif;
+  --font-greed: 'Cormorant Garamond', serif;
+  --font-lust: 'Alegreya Sans SC', sans-serif;
+  --font-gluttony: 'Rubik Mono One', monospace;
+}
+
+.font-title {
+  font-family: var(--font-title);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-pride {
+  font-family: var(--font-pride);
+}
+
+.font-envy {
+  font-family: var(--font-envy);
+}
+
+.font-wrath {
+  font-family: var(--font-wrath);
+}
+
+.font-sloth {
+  font-family: var(--font-sloth);
+}
+
+.font-greed {
+  font-family: var(--font-greed);
+}
+
+.font-lust {
+  font-family: var(--font-lust);
+}
+
+.font-gluttony {
+  font-family: var(--font-gluttony);
+}
+
+body {
+  background: var(--secondary);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
